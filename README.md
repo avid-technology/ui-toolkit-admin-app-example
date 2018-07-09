@@ -1,11 +1,11 @@
 # Example Admin App
 
-### Introduction
+## Introduction
 
 This example show how can you develope CloudUx Application that it will be
 available from Adming page.
 
-### Admin mode
+## Admin mode
 To use your application as Admin you need to change mode in **package.json**
 as said in [guide](http://developer.avid.com/mcux_ui_plugin/clux-api/apps/apps-types.html#user-and-administrative-applications/ "Avid Developers").
 In test application it looks like this:
@@ -21,7 +21,7 @@ But it would be available in your admin panel `https://CloudUxAddress/admin`
 
 ![Alt text](screenshots/admin-mode-admin.png "Admin view")
 
-### Main mode
+## Main mode
 If you want to change your application view to main page in your **package.json**
 change mode to **main**:
 
@@ -35,7 +35,7 @@ But it won't be available in your admin view:
 
 ![Alt text](screenshots/admin-mode-main.png "Admin view")
 
-### Running the example
+## Running the example
 
 To run example you will need running MediaCentral CloudUX server. properties
 can we changed in `src/project.act`. After you change `project.act` in your
