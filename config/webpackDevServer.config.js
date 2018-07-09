@@ -87,8 +87,6 @@ module.exports = {
             const isAdminApp = (config.avid.hasOwnProperty('mode') && config.avid.mode[0] === 'admin');
             const normal = !isAdminApp && req.query.mode === 'main';
             const admin = isAdminApp && req.query.mode === 'admin';
-            console.log('NORMAL', normal)
-            console.log('ADMIN', admin)
             if(admin){
                 injectApp(req, res);
             }
