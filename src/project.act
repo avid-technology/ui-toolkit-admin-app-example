@@ -1,17 +1,17 @@
 {
    "identity": {
-      "description": "fsafsafas",
-      "build": "14234",
-      "version": "0.0.8-new"
+      "description": "Test",
+      "build": "1",
+      "version": "0.0.1-alpha"
    },
    "signing": {
-      "login": "123",
-      "developerID": "Moleszcz",
-      "organization": "32131423423",
-      "privateKeyPath": "c:\\Users\\MOLESZCZ\\Desktop\\demo\\private.key"
+      "login": "Test",
+      "developerID": "Test",
+      "organization": "Avid",
+      "privateKeyPath": ""
    },
    "connection": {
-      "hostIp": "10.42.24.56",
+      "hostIp": "YourCloudUxHost",
       "hostPort": "",
       "proxyPort": "8080"
    }
