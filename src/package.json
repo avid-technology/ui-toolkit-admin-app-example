@@ -1,0 +1,15 @@
+{
+   "identity": {
+      "appName": "TestApp"
+   },
+   "main": "index.js",
+   "avid": {
+      "format": "amd",
+      "autoload": true,
+      "mode": [
+         "admin"
+      ],
+      "alias": "avid.testmediacentalapp.com.1-xy6icoA01y0koycAhbs8kiTL8MA751geqS",
+      "secret": "1TmH9nxFqgd2vObhCrGZiy+Y3GIb5Yi9+rDoOy9i8qE="
+   }
+}
