@@ -38,7 +38,10 @@ But it won't be available in your admin view:
 ## Running the example
 
 To run example you will need running MediaCentral CloudUX server. properties
-can we changed in `src/project.act`. After you change `project.act` in your
+can we changed in [src/project.act](src/project.act "Project act").
+After you change hostIp in `project.act` you can run application.
 cli type:
 1. `npm install`
 2. `npm start`
+3. Go to your [localhost](https://127.0.0.1:8080/ "Localhost").
+
