@@ -22,7 +22,7 @@ But it would be available in your admin panel `https://CloudUxAddress/admin`
 ![Alt text](screenshots/admin-mode-admin.png "Admin view")
 
 ## Main mode
-If you want to change your application view to main page in your **package.json**
+If you want to change your application view to main page in your [src/package.json](src/package.json "package.json")
 change mode to **main**:
 
 ![Alt text](screenshots/main-package.png "package.json")
