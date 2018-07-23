@@ -1,13 +1,15 @@
 /**
  * Copyright 2017 by Avid Technology, Inc.
  */
-import { getLocalization } from 'cloudux-l10n';
-import l10nData from '../l10n/lang.en.json';
+import '../css/cloudux.min.css'
+import {html} from './example';
 
 export default class ApplicationContainer {
     constructor() {
         this.div = document.createElement('div');
-        this.div.innerHTML = getLocalization(l10nData)('example-plugin-message');
+        this.div.innerHTML = html;
+        this.div.style.width = '100%';
+        this.div.style.height = '100%';
     }
 
     returnElement() {
