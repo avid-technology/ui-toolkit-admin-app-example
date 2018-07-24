@@ -1,17 +1,15 @@
 /**
  * Copyright 2017 by Avid Technology, Inc.
  */
-
-import axios from 'axios';
+import '../css/cloudux.min.css'
+import {html} from './example';
 
 export default class ApplicationContainer {
-
     constructor() {
         this.div = document.createElement('div');
-        axios.get('https://127.0.0.1:8080/apis/avid.acs.attributes;realm=global;version=3/attributes?name=tomek')
-            .then((res) => {
-            this.div.innerHTML = JSON.stringify(res);
-        });
+        this.div.innerHTML = html;
+        this.div.style.width = '100%';
+        this.div.style.height = '100%';
     }
 
     returnElement() {
