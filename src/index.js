@@ -3,7 +3,6 @@
  */
 
 import appConfig from './package.json';
-import '../css/cloudux.min.css';
 
 import ViewConfig from './avid_api/view/ViewConfig';
 import AppEntry from './avid_api/entry/EntryConfig';
