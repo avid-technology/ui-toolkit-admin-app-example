@@ -1,6 +1,4 @@
 import request from 'axios';
-import {get} from './persist';
-
 export const GET = 'GET';
 export const POST = 'POST';
 export const PUT = 'PUT';
@@ -8,7 +6,6 @@ export const PATCH = 'PATCH';
 export const DELETE = 'DELETE';
 
 const service = (requestType, url, data = {}, config = {}) => {
-    request.defaults.headers.common.Authorization = get('token') ? `Token ${get('token')}` : '';
     request.defaults.credentials = 'same-origin';
 
     switch (requestType) {

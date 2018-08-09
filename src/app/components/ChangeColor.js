@@ -6,8 +6,6 @@ const changeColor = ({changeSettings, userSettings}) => {
         <div className="cux-toolbar ">
             <form onSubmit={(event) => {
                 event.preventDefault();
-                console.log(event.target[0].value);
-
                 userSettings.userMessageColor = event.target[0].value;
                 changeSettings(userSettings);
             }}>

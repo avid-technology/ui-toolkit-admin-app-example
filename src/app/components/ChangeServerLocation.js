@@ -5,10 +5,6 @@ const changeServerLocation = ({changeSettings, userSettings}) => {
         <div style={{width: '250px', margin: 'auto'}}>
             <form onSubmit={(event) => {
                 event.preventDefault();
-                console.log(event.target[0].checked);
-                console.log(event.target[1].checked);
-                console.log(event.target[2].checked);
-
                 userSettings.usServer = event.target[0].checked;
                 userSettings.germanyServer = event.target[1].checked;
                 userSettings.chinaServer = event.target[2].checked;
