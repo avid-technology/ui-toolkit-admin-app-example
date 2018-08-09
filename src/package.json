@@ -1,15 +1,15 @@
 {
-   "identity": {
-      "appName": "TestApp"
-   },
-   "main": "index.js",
-   "avid": {
-      "format": "amd",
-      "autoload": true,
-      "mode": [
-         "admin"
-      ],
-      "alias": "Avid-Application-Id",
-      "secret": "Avid-Application-Secret"
-   }
+  "identity": {
+    "appName": "Admin-App"
+  },
+  "main": "index.js",
+  "avid": {
+    "format": "amd",
+    "autoload": true,
+    "mode": [
+      "admin"
+    ],
+    "alias": "your-avid-app-id",
+    "secret": "your-app-secred-from-myavid-com"
+  }
 }

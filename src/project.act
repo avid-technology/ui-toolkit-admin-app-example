@@ -1,18 +1,18 @@
 {
-   "identity": {
-      "description": "Test",
-      "build": "1",
-      "version": "0.0.1-alpha"
-   },
-   "signing": {
-      "login": "Test",
-      "developerID": "Test",
-      "organization": "Avid",
-      "privateKeyPath": ""
-   },
-   "connection": {
-      "hostIp": "10.42.24.56",
-      "hostPort": "",
-      "proxyPort": "8080"
-   }
+  "identity": {
+    "description": "test",
+    "build": "1",
+    "version": "0.01"
+  },
+  "signing": {
+    "login": "",
+    "developerID": "",
+    "organization": "",
+    "privateKeyPath": ""
+  },
+  "connection": {
+    "hostIp": "CloudUX Server",
+    "hostPort": "",
+    "proxyPort": "8080"
+  }
 }

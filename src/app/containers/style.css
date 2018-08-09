@@ -1,0 +1,23 @@
+.containerBody {
+    height: 100%;
+    width: 30%;
+    transform: translate(120%, 10%);
+}
+
+.cux-table-custom {
+    display: table;
+    border-collapse: collapse;
+    line-height: 30px;
+    background-color: #1f2127;
+    font-size: 11px;
+    color: #808499;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 10px
+}
+
+.cux-main-table-custom {
+    display: flex;
+    flex-direction: column
+}
