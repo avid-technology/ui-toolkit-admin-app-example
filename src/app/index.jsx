@@ -12,8 +12,8 @@ import {composeWithDevTools} from 'redux-devtools-extension';
 import rootReducer from './redux/reducers/index';
 import rootSaga from './redux/saga/index';
 import PaneContainer from './containers/MainPaneContainer';
-
-// export const API_URL='http://localhost:8000/api/';
+import 'tachyons';
+import 'cloudux-bootstrap/dist/css/cloudux.min.css';
 
 export default class ApplicationContainer {
     constructor() {

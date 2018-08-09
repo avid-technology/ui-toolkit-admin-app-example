@@ -4,33 +4,29 @@
 
 import React from 'react';
 import {connect} from 'react-redux';
-import PropTypes from 'prop-types';
-import MainPane from '../components/MainPane';
 import actionTypes from '../redux/actions/actionTypes';
 import {makeAction} from '../redux/actions/makeAction';
+import MainView from './MainView';
 
 class PaneContainer extends React.Component {
+    componentDidMount() {
+        this.props.getAdminSettings();
+    }
+
     render() {
         return (
-            <MainPane token={this.props.token} exampleAction={this.props.exampleAction}/>
+            <MainView/>
         );
     }
 }
 
-PaneContainer.propTypes = {
-    token: PropTypes.bool.isRequired,
-    exampleAction: PropTypes.func.isRequired,
-};
-
-const mapStateToProps = (state) => ({
-    token: state.example.token,
-});
+const mapStateToProps = () => ({});
 
 const mapDispatchToProps = {
-    exampleAction: makeAction(actionTypes.EXAMPLE_ACTION),
+    getAdminSettings: makeAction(actionTypes.ADMIN_SETTINGS_GET),
 };
 
 export default connect(
     mapStateToProps,
-    mapDispatchToProps
+    mapDispatchToProps,
 )(PaneContainer);

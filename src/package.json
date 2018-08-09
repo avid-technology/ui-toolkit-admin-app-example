@@ -1,6 +1,6 @@
 {
   "identity": {
-    "appName": "TestApp"
+    "appName": "Admin-App"
   },
   "main": "index.js",
   "avid": {
@@ -9,7 +9,7 @@
     "mode": [
       "admin"
     ],
-    "alias": "Avid-Application-Id",
-    "secret": "Avid-Application-Secret"
+    "alias": "your-avid-app-id",
+    "secret": "your-app-secred-from-myavid-com"
   }
 }

@@ -1,21 +1,34 @@
 import actionTypes from '../actions/actionTypes';
 
 const DEFAULT_STATE = {
-    token: false,
+    userSettings: {
+    },
+    spinner: true,
+    failedFetch: false,
 };
 
 const authReducer = (state = DEFAULT_STATE, action) => {
     switch (action.type) {
-        case actionTypes.EXAMPLE_ACTION_SUCCESS: {
+        case actionTypes.ADMIN_SETTINGS_GET_PROGRESS: {
             return {
                 ...state,
-                token: action.payload,
+                spinner: true,
             };
         }
-        case actionTypes.EXAMPLE_ACTION_FAILED: {
+        case actionTypes.ADMIN_SETTINGS_GET_SUCCESS: {
             return {
                 ...state,
-                token: false,
+                userSettings: action.payload,
+                failedFetch: false,
+                spinner: false,
+            };
+        }
+        case actionTypes.ADMIN_SETTINGS_GET_FAILED: {
+            return {
+                ...state,
+                userSettings: action.payload,
+                failedFetch: true,
+                spinner: false,
             };
         }
         default: {

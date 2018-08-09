@@ -1,47 +1,39 @@
-# Example Admin App
+# Example Settings Tab
 
 ## Introduction
 
-This example show how can you develope CloudUx Application that it will be
-available from Adming page.
+This example show you example Application that can be only seen from
+Admin View in Avid **MediaCentral | Cloud UX**.
 
-## Admin mode
-To use your application as Admin you need to change mode in **package.json**
-as said in [guide](http://developer.avid.com/mcux_ui_plugin/clux-api/apps/apps-types.html#user-and-administrative-applications/ "Avid Developers").
-In test application it looks like this:
+## Admin App
+This example allow you to see how Application work in admin view.
+You will be able to set some settings using **avid.acs.attributes**
 
-![Alt text](screenshots/admin-package.png "package.json")
+When you open **MediaCentral | Cloud UX** in Admin-View open application
 
-Beacuse we run application only for admin we wouldn't be able to see it
-from main view:
+![Alt text](screenshots/toolbar.png "Admin View Start")
 
-![Alt text](screenshots/cloudux-mode-admin.png "Main view")
+In it you will see example application. If someone used it before,
+those settings may not be empy.
 
-But it would be available in your admin panel `https://CloudUxAddress/admin`
+![Alt text](screenshots/Admin-App.png "Admin View Start")
 
-![Alt text](screenshots/admin-mode-admin.png "Admin view")
+After you fill all of the fields you can see settings that you chose on
+bottom.
 
-## Main mode
-If you want to change your application view to main page in your [src/package.json](src/package.json "package.json")
-change mode to **main**:
+![Alt text](screenshots/Admin-App-Done.png "Settings-Tab")
 
-![Alt text](screenshots/main-package.png "package.json")
-
-Now your application will be visible in main view:
-
-![Alt text](screenshots/cloudux-mode-main.png "Main View")
-
-But it won't be available in your admin view:
-
-![Alt text](screenshots/admin-mode-main.png "Admin view")
+You can clear all of settings by clicking on **Reset All Settings**
 
 ## Running the example
 
-To run example you will need running MediaCentral CloudUX server. properties
-can we changed in [src/project.act](src/project.act "Project act").
-After you change hostIp in `project.act` you can run application.
-cli type:
+To run example you will need Avid MediaCentral | Cloud UX server.
+ Connection roperties can be changed in [src/project.act](src/project.act "Project act").
+After you change hostIp in `project.act` you can run application. You may also need
+to change REALM and VERSION in [src/app/constants.js](src/app/constants.js "Project constants")
+
+**from Admin-App folder in cli type:**
 1. `npm install`
 2. `npm start`
-3. Go to your [localhost](https://127.0.0.1:8080/ "Localhost").
+3. Go to [127.0.0.1:8080/admin-login](https://127.0.0.1:8080/admin-login "127.0.0.1:8080").
 
