@@ -1,7 +1,6 @@
 import React from 'react';
 
 const progressBar = ({userSettings}) => {
-
     let usedSettingsCounter = 0;
 
     function countUsedSettings() {
@@ -30,7 +29,7 @@ const progressBar = ({userSettings}) => {
                     Progress:
                 </div>
                 <div className="cux-bar">
-                    <div className="cux-bar-loading" style={{width: `${countUsedSettings()/5*100}%`}}></div>
+                    <div className="cux-bar-loading" style={{width: `${countUsedSettings()/5*100}%`}} />
                 </div>
             </div>
         </div>

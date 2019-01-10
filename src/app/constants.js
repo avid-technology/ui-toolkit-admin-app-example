@@ -5,7 +5,7 @@ const constants = {
     REALM: 'global',
     VERSION: '3',
     FETCH_ATTRIBUTES_QUERY: 'attributes?name=',
-    APP_NAME: appConfig['identity']['appName'],
+    APP_NAME: appConfig.identity.appName,
     USER_SETTINGS: 'adminApp',
 
 

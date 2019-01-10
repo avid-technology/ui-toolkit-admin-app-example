@@ -11,12 +11,12 @@ const isAdminApp = appConfig.avid.hasOwnProperty('mode') && appConfig.avid.mode[
 const providing = isAdminApp ? 'adminApps' : 'apps';
 export const avid = [
     {
-        name: `${appConfig['identity']['appName']}-view`,
+        name: `${appConfig.identity.appName}-view`,
         provides: ['views'],
         create: () => ViewConfig,
     },
     {
-        name: `${appConfig['identity']['appName']}-default-theme`,
+        name: `${appConfig.identity.appName}-default-theme`,
         provides: ['theme'],
         create: () => ({
             key: 'dark',
@@ -24,7 +24,7 @@ export const avid = [
         }),
     },
     {
-        name: appConfig['identity']['appName'],
+        name: appConfig.identity.appName,
         provides: [providing],
         create: () => AppEntry,
     },

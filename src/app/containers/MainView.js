@@ -17,7 +17,6 @@ import ResetAllSettings from '../components/ResetAllSettings';
 import './style.css';
 
 class MainView extends React.Component {
-
     render() {
         return (
             <div>

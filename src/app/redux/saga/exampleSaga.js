@@ -3,7 +3,7 @@ import actionTypes from '../actions/actionTypes';
 import request, {PUT, GET} from '../../services/request';
 import constants from '../../constants';
 
-export function* getUserSettings() {
+export function *getUserSettings() {
     while (true) {
         try {
             yield take(actionTypes.ADMIN_SETTINGS_GET);
@@ -11,7 +11,7 @@ export function* getUserSettings() {
             try {
                 yield request(GET, constants.ADMIN_SETTINGS_GET_API_URI());
             } catch (e) {
-                console.error(`can't find user creating new`);
+                console.error('can\'t find user creating new');
                 const userSettings = yield {
                     name: constants.ADMIN_SETTINGS_QUERY_PARAM(),
                     value: {},
@@ -27,7 +27,7 @@ export function* getUserSettings() {
     }
 }
 
-export function* changeUserSettings() {
+export function *changeUserSettings() {
     while (true) {
         try {
             const {payload} = yield take(actionTypes.ADMIN_SETTINGS_ADD);
@@ -47,7 +47,7 @@ export function* changeUserSettings() {
 }
 
 
-export default function* exampleSaga() {
+export default function *exampleSaga() {
     yield all([
         fork(getUserSettings),
         fork(changeUserSettings),

@@ -1,7 +1,6 @@
 import React from 'react';
 
 const settingsTable = ({userSettings}) => {
-
     function fontSize() {
         switch (userSettings.userMessageSize) {
             case ('0.5vw'):

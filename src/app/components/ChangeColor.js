@@ -1,7 +1,6 @@
 import React from 'react';
 
 const changeColor = ({changeSettings, userSettings}) => {
-
     return (
         <div className="cux-toolbar ">
             <form onSubmit={(event) => {
