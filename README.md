@@ -28,7 +28,7 @@ You can clear all of settings by clicking on **Reset All Settings**
 ## Running the example
 
 To run example you will need Avid MediaCentral | Cloud UX server.
- Connection roperties can be changed in [src/project.act](src/project.act "Project act").
+ Connection roperties can be changed in [src/project.config.json](src/project.config.json "project.config.json").
 After you change hostIp in `project.act` you can run application. You may also need
 to change REALM and VERSION in [src/app/constants.js](src/app/constants.js "Project constants")
 
