@@ -35,5 +35,5 @@ to change REALM and VERSION in [src/app/constants.js](src/app/constants.js "Proj
 **from Admin-App folder in cli type:**
 1. `npm install`
 2. `npm start`
-3. Go to [127.0.0.1:8080/admin-login](https://127.0.0.1:8080/admin-login "127.0.0.1:8080").
+3. Go to [localhost/admin-login](https://localhost/admin-login "localhost").
 
