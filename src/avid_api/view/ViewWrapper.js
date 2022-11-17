@@ -1,6 +1,7 @@
 /**
- * Copyright 2017 by Avid Technology, Inc.
+ * Copyright 2022 by Avid Technology, Inc.
  */
+/* eslint-disable */
 
 import ReactDOM from 'react-dom';
 
@@ -8,23 +9,16 @@ import ApplicationContainer from '../../app/index';
 
 // Need to be bcs it is used in main App :
 export default class ViewWrapper {
-    createElement() {
-        this.el = document.createElement('div');
-        return Promise.resolve(this.el);
-    }
-
-    onInit(config) {
+    onInit(config, { dispatch }) {
+        this.trigger = dispatch;
         this.state = config.state;
-
-        this.pane = new ApplicationContainer({
-            contextCallback: function (context) {
-                this.trigger('contextChange', context);
-            }.bind(this),
-        });
     }
 
-    onRender() {
+    onRender({ domElement }) {
+        this.el = document.createElement('div');
+        this.pane = new ApplicationContainer();
         this.pane.render(this.el);
+        domElement.appendChild(this.el);
     }
 
     onDestroy() {
@@ -35,6 +29,10 @@ export default class ViewWrapper {
         return this.pane.store.getState();
     }
 
+    getTitle() {
+        return this.pane && this.pane.getTitle();
+    }
+
     onRevalidate(data) {}
 
     onFocusLost() {}
@@ -43,35 +41,24 @@ export default class ViewWrapper {
 
     enqueueLoading(promise) {}
 
-    name(newName) {
-        return '';
-    }
+    name(newName) {return '';}
 
-    isShown() {
-        return true;
-    }
+    isShown() {return true;}
 
-    isVisible() {
-        return true;
-    }
+    isVisible() {return true;}
 
-    closeAllowed() {
-        return true;
-    }
+    closeAllowed() {return true;}
 
     destroy() {}
 
-    getMinHeight() {
-        return 50;
-    }
+    getMinHeight() {return 50;}
 
-    getMinWidth() {
-        return 50;
-    }
+    getMinWidth() {return 50;}
 
     get publicScope() {
         return {
             getState: this.getState.bind(this),
+            getTitle: this.getTitle.bind(this),
         };
     }
 }
